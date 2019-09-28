@@ -1,0 +1,75 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GPA calculator</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="yo">
+  <link rel="stylesheet"  href="./calculator.css"/>
+  <link rel='icon' href='favicon.jpg' type='image/x-icon'/ >
+  <script src="./calculator.js"></script>
+</head>
+
+<body>
+<div class="grade-container" >
+  <h1>Grade Calculator</h1>
+  <div class="form">
+      <h3 class="border-top border-bottom">Activities</h3>
+      <div class="alert">Get grades to the summeries activities</div>
+      <div class="table-container">
+          <table class="table">
+            <tr class =  "table-header">
+              <th><strong>Name</strong></th>
+              <th><strong>Short Name</strong></th>
+              <th><strong>Weight</strong></th>
+              <th><strong>Grade</strong></th>
+              <th><strong>Perscent</strong></th>
+            </tr>
+            <tr class = "table-content">
+              <td>Activity 1</td>
+              <td>A1</td>
+              <td><input name = "weight1" type="number" onchange = "Onload()"> </td>
+              <td><input name = "grade1" type="number" onchange = "Onload()"> /<input name = "total1" type="number" onchange="Onload()"></td>
+              <td><p name="percent1"></p> </td>
+            </tr>
+            <tr class = "table-content">
+                <td>Activity 2</td>
+                <td>A2</td>
+                <td><input name = "weight2" type="number" onchange="Onload()"> </td>
+                <td><input name = "grade2" type="number" onchange="Onload()"/>/<input name = "total2" type="number" onchange="Onload()"/> </td>
+                <td><p name="percent2"></p> </td>
+              </tr>
+              <tr class = "table-content">
+                  <td>Activity 3</td>
+                  <td>A3</td>
+                  <td><input name = "weight3" type="number" onchange="Onload()"> </td>
+                  <td><input name = "grade3" type="number" onchange="Onload()"> /<input name = "total3" type="number" onchange="Onload()"></td>
+                  <td><p name="percent3"></p> </td>
+                </tr>
+                <tr class = "table-content">
+                    <td>Activity 4</td>
+                    <td>A4</td>
+                    <td><input name = "weight4" type="number" onchange="Onload()"> </td>
+                    <td><input name = "grade4" type="number" onchange="Onload()">/<input name = "total4" type="number" onchange="Onload()"> </td>
+                    <td><p name="percent4"></p> </td>
+                  </tr>
+          </table>
+        </div>
+      <br/>
+      <h3>Result</h3>
+      <div class="container" style="overflow:auto">
+      <p id="result" name="result"></p>
+      <div class="button-group">
+      <button class="btn" onclick = "Weight()"><span>WEIGHTED</span></button>
+      <button class="btn" onclick = "Mean()"><span>MEAN</span></button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
